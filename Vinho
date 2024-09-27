@@ -1,0 +1,54 @@
+<?php
+Class Vinho{
+   private $nome;
+   private $tipo;
+   private $safra;
+   private $preco;
+
+    public function setNome($nome){
+        $this->nome = $nome;   
+     }
+
+     public function setTipo($tipo){
+        $this->tipo = $tipo;   
+     }
+
+     public function setPreco($preco){
+      $this->prec = $preco;   
+   }
+
+     public function setSafra($safra){
+        $this->saf = $safra;   
+     }
+
+     public function getNome(){
+        return $this->nome;   
+     }
+
+     public function getPreco(){
+        return $this->prec;   
+     }
+
+     public function getTipo(){
+        return $this->tipo;   
+     }
+
+     public function getSafra(){
+        return $this->saf;   
+     }
+
+     public function mostrarVinho(){
+      return $this->nome .', '. $this->tipo .', '. $this->prec .', '. $this->saf;
+     }
+
+     public function verificarPreco(){
+         if($this->prec < 25){
+            return true;
+         }else if($this->prec > 25){
+         return false;
+         }
+      }
+
+}
+
+?>
